@@ -17,6 +17,7 @@
 | `ch06_ml` | 第六章 | 最簡單的機器學習：用隨機森林排序股票 |
 | `ch09_ptt` | 第九章 | PTT 社群分析：統計看多看空的情緒 |
 | `ch10_line` | 第十章 | 用 LINE Messaging API 把選股結果推到手機 |
+| `mini_quant_system` | 第七～十三章實作篇 | 從資料、指標、因子、風控到回測報告的最小量化系統 |
 
 ## 環境需求
 
@@ -34,6 +35,8 @@ pip install -r requirements.txt
 ```
 python ch02_crawler/fetch_stock.py
 python ch03_kline/detect_kline.py
+cd mini_quant_system
+python run_demo.py
 ```
 
 ## 注意事項
@@ -41,3 +44,12 @@ python ch03_kline/detect_kline.py
 1. 範例使用的證交所、PTT 等公開資料來源可能會調整格式或加上流量限制，若執行失敗多半與此有關，不影響觀念理解。
 2. 抓取公開資料時請放慢頻率（範例已內建延遲），避免造成對方伺服器負擔。
 3. 範例僅供學習，**不構成任何投資建議**。
+
+## 程式碼來源與第三方授權
+
+本資料夾的範例是為本書撰寫的原創教學程式，沒有複製或改寫其他量化交易框架的原始碼。RSI、移動平均、多因子加權、最大回撤與停損等屬於通用的金融或統計概念；本書以自行設計的程式結構與假資料加以示範。
+
+- 詳細來源稽核：[`CODE_PROVENANCE.md`](CODE_PROVENANCE.md)
+- 第三方套件聲明：[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)
+
+目前倉庫尚未放入對外授權檔，因此著作權預設由作者保留。若出版社希望讀者可以複製、修改及再散布完整範例，出版前應由作者與出版社確認後另行加入明確的 `LICENSE`。

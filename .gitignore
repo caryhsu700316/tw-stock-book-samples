@@ -13,3 +13,7 @@ env/
 Thumbs.db
 .vscode/
 .idea/
+
+# MiniQuant runtime artifacts
+mini_quant_system/data/
+mini_quant_system/output/
